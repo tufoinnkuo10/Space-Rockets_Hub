@@ -5,6 +5,9 @@ import {
 } from 'react-router-dom';
 import Header from './components/header';
 import Missions from './components/Missions';
+import Rockets from './components/rockets';
+import MyProfile from './components/myProfile';
+import Dragons from './components/dragons';
 
 function App() {
   return (
@@ -12,13 +15,13 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/">
-          <rockets />
+          <Rockets />
         </Route>
         <Route path="/myProfile">
-          <myprofile />
+          <MyProfile />
         </Route>
         <Route path="/Dragons">
-          <dragons />
+          <Dragons />
         </Route>
         <Route path="/mission">
           <Missions />
