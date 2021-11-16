@@ -1,9 +1,24 @@
-import React from 'react';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getRockets } from '../Redux/rockets/rockets';
+import SingleRocket from './Mainrocket';
 
-const Rockets = () => (
-  <div>
-    <p>Rockets</p>
-  </div>
-);
+const RocketElement = () => {
+  const dispatch = useDispatch();
 
-export default Rockets;
+  const rockets = useSelector((state) => state.rockets);
+  useEffect(() => {
+    dispatch(getRockets());
+  }, []);
+  return (
+    <>
+      {
+        rockets.map((rocket) => (
+          <SingleRocket key={rocket.id} data={rocket} />
+        ))
+      }
+    </>
+  );
+};
+
+export default RocketElement;
