@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function rockets() {
-  return (
-    <div>
-      <h1>Rocket</h1>
-    </div>
-  );
-}
+const Rockets = () => (
+  <div>
+    <p>Rockets</p>
+  </div>
+);
+
+export default Rockets;
