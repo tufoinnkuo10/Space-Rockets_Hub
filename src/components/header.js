@@ -5,9 +5,16 @@ function Header() {
   return (
     <header>
       <div className="header-container">
-        <div className="img-h1">
-          <img className="logo" id="logo" src="https://cdn-icons-png.flaticon.com/512/3212/3212608.png" alt="" />
+        <div>
           <h1><NavLink to="/">Space Rockets&lsquo; Hub</NavLink></h1>
+        </div>
+        <div className="img-h1">
+          <img
+            className="logo"
+            id="logo"
+            src="https://cdn-icons-png.flaticon.com/512/3212/3212608.png"
+            alt=""
+          />
         </div>
         <nav>
           <div className="links">
