@@ -4,11 +4,11 @@ import {
   Route,
 } from 'react-router-dom';
 import Header from './components/header';
+import Missions from './components/Missions';
 
 function App() {
   return (
     <>
-
       <Header />
       <Switch>
         <Route exact path="/">
@@ -21,7 +21,7 @@ function App() {
           <dragons />
         </Route>
         <Route path="/mission">
-          <missions />
+          <Missions />
         </Route>
       </Switch>
 
