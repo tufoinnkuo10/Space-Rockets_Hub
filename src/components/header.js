@@ -16,7 +16,7 @@ function Header() {
                 <NavLink to="/" exact activeClassName="selected">Rockets</NavLink>
               </li>
               <li>
-                <NavLink to="/" exact activeClassName="selected">Dragons</NavLink>
+                <NavLink to="/dragons" exact activeClassName="selected">Dragons</NavLink>
               </li>
               <li>
                 <NavLink to="/mission" activeClassName="selected"> Missions</NavLink>

@@ -17,14 +17,14 @@ function App() {
         <Route exact path="/">
           <Rockets />
         </Route>
+        <Route path="/mission">
+          <Missions />
+        </Route>
         <Route path="/myProfile">
           <MyProfile />
         </Route>
         <Route path="/Dragons">
           <Dragons />
-        </Route>
-        <Route path="/mission">
-          <Missions />
         </Route>
       </Switch>
 
