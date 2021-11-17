@@ -1,8 +1,8 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import missions from './missions/missions';
 import dragons from './dragons/dragons';
-import thunk from 'redux-thunk';
 import fetchrocketAPI from '../components/Apirocket';
 import rocketReducer, { getRockets } from './rockets/rockets';
 
