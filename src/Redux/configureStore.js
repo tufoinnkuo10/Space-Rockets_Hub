@@ -1,6 +1,6 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
-import logger from 'redux-logger';
 import thunk from 'redux-thunk';
+import logger from 'redux-logger';
 import missions from './missions/missions';
 import dragons from './dragons/dragons';
 import fetchrocketAPI from '../components/Apirocket';
@@ -20,5 +20,4 @@ const store = createStore(
 store.dispatch(getRockets());
 
 fetchrocketAPI();
-
 export default store;
