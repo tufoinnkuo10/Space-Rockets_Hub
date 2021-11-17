@@ -1,37 +1,53 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchData } from '../Redux/missions/missions';
+// import { fetchData } from '../Redux/missions/missions';
 
-const displayItem = () => {
+const displayItem = (missionTab) => {
+  const { missions } = missionTab;
   const tab = [];
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < missions.length; i += 1) {
     tab.push(
-      <tr>
-        <td>Thaicom</td>
+      <tr key={i}>
         <td>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          {missions[i].mission_name}
+        </td>
+        <td>
+          { missions[i].description }
         </td>
         <td>
           <span className="badge">Not a member</span>
         </td>
         <td>
-          <button className="btn" type="button">Join Mission</button>
+          <button className="btn" id={missions[i].mission_id} type="button">Join Mission</button>
         </td>
       </tr>,
     );
   }
-  return tab;
+  return (tab);
 };
-export default function Missions() {
+const Missions = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchData());
+  }, [dispatch]);
+  const missions = useSelector((state) => state.missions);
   return (
     <div>
-      <table>
-        <tr>
-          <th>Mission</th>
-          <th>Description</th>
-          <th>Status</th>
-          <th>Status</th>
-        </tr>
-        {displayItem()}
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Mission</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          {displayItem(missions)}
+        </tbody>
       </table>
     </div>
   );
-}
+};
+export default Missions;
