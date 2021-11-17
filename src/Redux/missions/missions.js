@@ -12,7 +12,6 @@ function reservedMission(state, action) {
     if (missions[index].reserved) {
       missions[index].reserved = false;
     } else missions[index].reserved = true;
-    console.log('found the mission:', missions[index]);
 
     return { ...state, missions };
   }
@@ -44,8 +43,7 @@ export const fetchData = () => async (dispatch) => {
     // console.log('data', result);
     dispatch(loadMissions(result));
   } catch (error) {
-    console.log(error);
-    // dispatch(loadMissions({ missions: [] }));
+    dispatch(loadMissions({ missions: [] }));
   }
 };
 export default missions;
