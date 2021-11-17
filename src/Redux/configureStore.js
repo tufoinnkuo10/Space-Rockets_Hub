@@ -6,7 +6,11 @@ import dragons from './dragons/dragons';
 import fetchrocketAPI from '../components/Apirocket';
 import rocketReducer, { getRockets } from './rockets/rockets';
 
-const reducer = combineReducers({ missions, dragons, rockets: rocketReducer });
+const reducer = combineReducers({
+  missions,
+  dragons,
+  rockets: rocketReducer,
+});
 
 const store = createStore(
   reducer,
