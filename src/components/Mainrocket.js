@@ -19,7 +19,7 @@ const SingleRocket = (prop) => {
   };
   return (
     <>
-      <div className="all">
+      <div className="rockettss">
         <img className="img-container" src={flickrImages} alt="rocket name" />
         <div className="description">
           <h2 className="rocket-name">
