@@ -1,53 +1,53 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchData } from '../Redux/missions/missions';
-// import { fetchData } from '../Redux/missions/missions';
+import { fetchData } from '../Redux/dragons/dragons';
+// import { fetchData } from '../Redux/dragons/dragons';
 
-const displayItem = (missionTab) => {
-  const { missions } = missionTab;
+const displayItem = (dragonTab) => {
+  const { dragons } = dragonTab;
   const tab = [];
-  for (let i = 0; i < missions.length; i += 1) {
+  for (let i = 0; i < dragons.length; i += 1) {
     tab.push(
       <tr key={i}>
         <td>
-          {missions[i].mission_name}
+          {dragons[i].dragons_name}
         </td>
         <td>
-          { missions[i].description }
+          { dragons[i].description }
         </td>
         <td>
           <span className="badge">Not a member</span>
         </td>
         <td>
-          <button className="btn" id={missions[i].mission_id} type="button">Join Mission</button>
+          <button className="btn" id={dragons[i].dragon_id} type="button">Join Dragon</button>
         </td>
       </tr>,
     );
   }
   return (tab);
 };
-const Missions = () => {
+const Dragons = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchData());
   }, [dispatch]);
-  const missions = useSelector((state) => state.missions);
+  const dragons = useSelector((state) => state.dragons);
   return (
     <div>
       <table border="1">
         <thead>
           <tr>
-            <th>Mission</th>
+            <th>Dragon</th>
             <th>Description</th>
             <th>Status</th>
             <th>Status</th>
           </tr>
         </thead>
         <tbody>
-          {displayItem(missions)}
+          {displayItem(dragons)}
         </tbody>
       </table>
     </div>
   );
 };
-export default Missions;
+export default Dragons;
