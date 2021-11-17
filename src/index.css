@@ -80,7 +80,7 @@ li a {
   gap: 0.8rem;
 }
 
-button {
+.buttonx {
   padding: 0.6rem;
   color: #fff;
   background-color: rgb(76, 76, 247);
@@ -90,6 +90,10 @@ button {
   border: none;
   width: 18%;
   font-weight: 700;
+}
+
+.manyinone {
+  padding-bottom: 2qrem;
 }
 
 button:focus {

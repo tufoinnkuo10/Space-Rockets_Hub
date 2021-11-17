@@ -18,7 +18,7 @@ const SingleRocket = (prop) => {
     }
   };
   return (
-    <>
+    <section className="manyinone">
       <div className="rockettss">
         <img className="img-container" src={flickrImages} alt="rocket name" />
         <div className="description">
@@ -33,10 +33,10 @@ const SingleRocket = (prop) => {
                 description
               }
           </span>
-          <button onClick={() => reservedRocketStatus(id)} type="button">{status}</button>
+          <button className="buttonx" onClick={() => reservedRocketStatus(id)} type="button">{status}</button>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
