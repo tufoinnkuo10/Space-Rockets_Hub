@@ -1,9 +1,10 @@
 import React from 'react';
+import ReservedMissions from './ReservedMissions';
 
 const MyProfile = () => (
   <div className="container">
     <div className="missions">
-      <p>Missions</p>
+      <ReservedMissions />
     </div>
     <div className="rockets">
       <p>Rockets</p>
