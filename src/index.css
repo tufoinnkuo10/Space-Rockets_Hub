@@ -111,3 +111,44 @@ button:focus {
   width: 8%;
   font-size: 13px;
 }
+
+.btn {
+  border: none;
+  background-color: white;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.btn-red {
+  border: 2px solid red !important;
+}
+
+.btn-gray {
+  border: 2px solid gray !important;
+}
+
+.badge-active {
+  color: white;
+  background-color: #19a2b8;
+  padding: 4px;
+  border-radius: 3px;
+  font-size: 11px;
+}
+
+.badge-unenable {
+  color: white;
+  background-color: gray;
+  padding: 4px;
+  border-radius: 3px;
+  font-size: 11px;
+}
+
+.min-width {
+  width: 100px;
+}
+
+.text-center {
+  text-align: center;
+}
