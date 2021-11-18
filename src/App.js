@@ -7,7 +7,7 @@ import Header from './components/header';
 import Missions from './components/Missions';
 import Rockets from './components/rockets';
 import MyProfile from './components/myProfile';
-import Dragons from './components/Dragons';
+import Dragons from './components/dragons';
 
 function App() {
   return (

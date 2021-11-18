@@ -1,50 +1,115 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  border-bottom: rgb(172, 168, 168) solid 1px;
 }
 
-.links ul {
-  list-style: none;
-  margin: 0;
+.rockettss {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  width: 100%;
 }
 
-.links ul li {
-  display: inline-block;
-  margin: 7px;
+.img-h1 {
+  display: flex;
+  gap: 2rem;
 }
 
-.links ul li a {
-  display: inline-block;
-  margin: 7px;
+.logo1 {
+  display: flex;
+  align-items: center;
+  width: 7%;
+}
+
+h1 {
+  display: flex;
+  justify-self: center;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+h1 a {
   text-decoration: none;
 }
 
+.rocket-name {
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  text-decoration: none;
+}
+
+li {
+  padding: 0 1rem;
+  font-size: 1.3rem;
+  list-style-type: none;
+  color: rgb(22, 61, 238);
+  margin-top: 0.5rem;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.img-container {
+  width: 20%;
+  padding-top: 1rem;
+}
+
 .selected {
-  text-decoration: underline !important;
-  color: blue;
+  text-decoration: underline;
+  color: rgb(150, 52, 7);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  width: 60%;
+  gap: 0.8rem;
+}
+
+.buttonx {
+  padding: 0.6rem;
+  color: #fff;
+  background-color: rgb(76, 76, 247);
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  width: 18%;
+  font-weight: 700;
+}
+
+.manyinone {
+  padding-bottom: 2rem;
+}
+
+button:focus {
+  background-color: #fff;
+  border: 2px solid #000;
+  color: rgb(82, 74, 74);
+}
+
+.reserved {
+  background-color: rgb(233, 21, 6);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  width: 8%;
+  font-size: 13px;
 }
 
 .btn {
