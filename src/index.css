@@ -189,7 +189,7 @@ button:focus {
   padding: 10px;
 }
 
-.container {
+.profile-container {
   display: grid;
   grid-template-columns: auto auto auto;
 }
