@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchData, reserved } from '../Redux/missions/missions';
-// import { fetchData } from '../Redux/missions/missions';
 
 const displayItem = (missionTab, dispatch) => {
   const { missions } = missionTab;
