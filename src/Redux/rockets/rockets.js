@@ -1,12 +1,13 @@
-import fetchApiRockets from '../../components/Apirocket';
+import fetchrocketAPI from '../../components/Apirocket';
 
 const GET_ROCKETS = 'nasa_projects/rockets/GET_ROCKETS';
 const RESERVE_ROCKETS = 'nasa_projects/rockets/RESERVE_ROCKETS';
 const CANCEL_ROCKETS = 'nasa_projects/rockets//CANCEL_ROCKETS';
 const initialState = [];
 
+let loading = false;
 export const getRockets = () => async (dispatch) => {
-  const theRockets = await fetchApiRockets();
+  const theRockets = await fetchrocketAPI();
   const mappedData = theRockets.map((rocket) => ({
     id: rocket.rocket_id,
     rocketName: rocket.rocket_name,
@@ -14,12 +15,14 @@ export const getRockets = () => async (dispatch) => {
     flickrImages: rocket.flickr_images[0],
   }));
 
-  dispatch(
+  if (loading) return;
+  await dispatch(
     {
       type: GET_ROCKETS,
       payload: mappedData,
     },
   );
+  loading = true;
 };
 
 export const reserveRockets = (id) => ({

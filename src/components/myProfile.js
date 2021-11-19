@@ -12,7 +12,7 @@ const MyProfile = () => {
           <ReservedMissions />
         </div>
         <div className="rockets">
-          <h3 className="rocketprofile"> Rockets</h3>
+          <h3 className="headname"> Rockets</h3>
           <div className="showrocket">
             {rockets.filter((item) => item.reserved).map((data) => (
               <li key={data.id} className="showrockets">
