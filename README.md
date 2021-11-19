@@ -1,7 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-SPACE ROCKETS AND MISSIONS
+# SPACE ROCKETS AND MISSIONS
 
 SPA that gets data from an API and displays that information on the different pages.
 - The app has a rocket page, mission page and dragon page
