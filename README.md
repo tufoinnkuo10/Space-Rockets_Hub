@@ -1,6 +1,54 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Name
+SPACE ROCKETS AND MISSIONS
+
+SPA that gets data from an API and displays that information on the different pages.
+- The app has a rocket page, mission page and dragon page
+- Rockets can be reserved as well as reservation can be cancelled
+- Missions can be joined and left as well
+- All reserved rockets and joined missions are displayed in the profile page
+- All information on the different pages are gotten from a given API
+
+
+# LIVE PREVIEW
+> ![demo-gif](./images/space2.gif)
+
+# TEST
+> ![Test](./images/test.png)
+
+# BUILT WITH
+- LANGUAGE:
+> JavaScript
+> Html
+> Css
+- FRAMEWORK:
+>
+- LIBRARY: 
+> React , Redux
+
+# Live links
+> [![Netlify Status](https://api.netlify.com/api/v1/badges/20d639fc-3987-45d5-bcf6-3a0db6782f98/deploy-status)](https://app.netlify.com/sites/space-ships-and-missions/deploys)
+
+> [LIVE PREVIEW](https://space-ships-and-missions.netlify.app/)
+
+
+## Authors
+
+👤 **Author1**
+TUFOIN NKUO
+- GitHub: [@githubhandle](https://github.com/tufoinnkuo10)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tufoin-nkuo/)
+
+👤 **Author2**
+AZARIA SAIDI
+- GitHub: [@githubhandle](https://github.com/azy64)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+👤 **Author3**
+LILIAN FRANCIS
+- GitHub: [@githubhandle](https://github.com/lilyfrancis)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## Available Scripts
 

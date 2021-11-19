@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchData } from '../Redux/missions/missions';
-// import { fetchData } from '../Redux/missions/missions';
+import { fetchData, reserved } from '../Redux/missions/missions';
 
-const displayItem = (missionTab) => {
+const displayItem = (missionTab, dispatch) => {
   const { missions } = missionTab;
   const tab = [];
   for (let i = 0; i < missions.length; i += 1) {
@@ -15,11 +14,19 @@ const displayItem = (missionTab) => {
         <td>
           { missions[i].description }
         </td>
-        <td>
-          <span className="badge">Not a member</span>
+        <td className="text-center">
+          <span className={missions[i].reserved ? 'badge-active' : 'badge-unenable'}>{missions[i].reserved ? 'Active Member' : 'Not A MEMBER'}</span>
         </td>
-        <td>
-          <button className="btn" id={missions[i].mission_id} type="button">Join Mission</button>
+        <td className="text-center">
+          <button
+            className={missions[i].reserved ? 'btn btn-red' : 'btn btn-gray'}
+            onClick={() => dispatch(reserved(missions[i].mission_id))}
+            id={missions[i].mission_id}
+            type="button"
+            name={i}
+          >
+            {missions[i].reserved ? 'Leave Mission' : 'Join Mission'}
+          </button>
         </td>
       </tr>,
     );
@@ -28,23 +35,25 @@ const displayItem = (missionTab) => {
 };
 const Missions = () => {
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchData());
-  }, [dispatch]);
   const missions = useSelector((state) => state.missions);
+  useEffect(() => {
+    if (missions.missions.length === 0) {
+      dispatch(fetchData());
+    }
+  }, [dispatch]);
   return (
     <div>
-      <table border="1">
+      <table className="table-missions">
         <thead>
           <tr>
             <th>Mission</th>
             <th>Description</th>
-            <th>Status</th>
-            <th>Status</th>
+            <th className="min-width">Status</th>
+            <th className="min-width">Action</th>
           </tr>
         </thead>
         <tbody>
-          {displayItem(missions)}
+          {displayItem(missions, dispatch)}
         </tbody>
       </table>
     </div>

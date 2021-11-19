@@ -1,16 +1,34 @@
 import React from 'react';
 
-const MyProfile = () => (
-  <div>
-    <div>
-      <p>Missions</p>
-    </div>
-    <div>
-      <p>Rockets</p>
-    </div>
-    <div>
-      <p>Dragons</p>
-    </div>
-  </div>
-);
+import { useSelector } from 'react-redux';
+import ReservedMissions from './ReservedMissions';
+import ReservedDragons from './ReservedDragons';
+
+const MyProfile = () => {
+  const rockets = useSelector((state) => state.rockets);
+  return (
+    <>
+      <div className="profile-container">
+        <div className="missions">
+          <ReservedMissions />
+        </div>
+        <div className="rockets">
+          <h3 className="headname"> Rockets</h3>
+          <div className="showrocket">
+            {rockets.filter((item) => item.reserved).map((data) => (
+              <li key={data.id} className="showrockets">
+                {data.rocketName}
+              </li>
+            ))}
+          </div>
+
+        </div>
+        <div className="dragons">
+          <ReservedDragons />
+        </div>
+      </div>
+    </>
+  );
+};
+
 export default MyProfile;
