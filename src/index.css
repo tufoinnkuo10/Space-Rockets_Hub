@@ -208,6 +208,42 @@ button:focus {
   box-shadow: 0 4px 9px gray !important;
 }
 
+
+#dragons {
+  width: 90%;
+  border-radius: 1em !important;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+#dragons caption {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: start;
+  padding: 8px;
+}
+
+.table-dragons {
+  border: 1px solid gray;
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+}
+
+.table-dragons th,
+.table-dragons td {
+  padding: 5px;
+  border: 1px solid gray;
+  text-align: start;
+}
+
+#dragons td {
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+.table-dragons tbody tr:nth-child(odd) { background-color: #f2f2f2; }
+
 @media screen and (max-width: 700px) {
   .container {
     grid-template-columns: 100% !important;

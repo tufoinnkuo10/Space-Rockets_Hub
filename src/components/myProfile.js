@@ -2,6 +2,7 @@ import React from 'react';
 
 import { useSelector } from 'react-redux';
 import ReservedMissions from './ReservedMissions';
+import ReservedDragons from './ReservedDragons';
 
 const MyProfile = () => {
   const rockets = useSelector((state) => state.rockets);
@@ -23,7 +24,7 @@ const MyProfile = () => {
 
         </div>
         <div className="dragons">
-          <p>Dragons</p>
+          <ReservedDragons />
         </div>
       </div>
     </>
