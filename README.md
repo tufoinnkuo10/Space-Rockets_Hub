@@ -1,6 +1,39 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Name
+SPACE ROCKETS AND MISSIONS
+
+SPA that gets and displays information on the different pages.
+> The app has a rocket page, mission page and dragon page
+> Rockets can be reserved as well as reservation can be cancelled
+> Missions can be joined and left as well
+> All reserved rockets and joined missions are displayed in the profile page
+> All information on the different pages are gotten from a given API
+
+
+# LIVE PREVIEW
+> ![demo-gif](./images/space.gif)
+
+# BUILT WITH
+- LANGUAGE:
+> JavaScript
+> Html
+> Css
+- FRAMEWORK:
+>
+- LIBRARY: 
+> React , Redux
+
+# Live links
+> [![Netlify Status](https://api.netlify.com/api/v1/badges/20d639fc-3987-45d5-bcf6-3a0db6782f98/deploy-status)](https://app.netlify.com/sites/space-ships-and-missions/deploys)
+
+> [LIVE PREVIEW](https://space-ships-and-missions.netlify.app/)
+
+
+# Authors
+TUFOIN NKUO
+ALLY SAIDI
+LILLIAN FRANCIS
 
 ## Available Scripts
 
