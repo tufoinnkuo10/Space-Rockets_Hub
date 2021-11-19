@@ -4,11 +4,11 @@
 SPACE ROCKETS AND MISSIONS
 
 SPA that gets data from an API and displays that information on the different pages.
-> The app has a rocket page, mission page and dragon page
-> Rockets can be reserved as well as reservation can be cancelled
-> Missions can be joined and left as well
-> All reserved rockets and joined missions are displayed in the profile page
-> All information on the different pages are gotten from a given API
+- The app has a rocket page, mission page and dragon page
+- Rockets can be reserved as well as reservation can be cancelled
+- Missions can be joined and left as well
+- All reserved rockets and joined missions are displayed in the profile page
+- All information on the different pages are gotten from a given API
 
 
 # LIVE PREVIEW
@@ -31,9 +31,9 @@ SPA that gets data from an API and displays that information on the different pa
 
 
 # Authors
-> TUFOIN NKUO
-> AZARIA SAIDI
-> LILLIAN FRANCIS
+- TUFOIN NKUO
+- AZARIA SAIDI
+- LILLIAN FRANCIS
 
 ## Available Scripts
 
