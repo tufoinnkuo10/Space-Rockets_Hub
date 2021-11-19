@@ -1,15 +1,22 @@
+import React from 'react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import { render, screen } from '@testing-library/react';
-import RocketElement from '../rockets';
 import store from '../../Redux/configureStore';
+import Fictions from '../Fictions';
+import Dragons from '../dragons';
 
-describe('Check if component renders the dragon element', () => {
-  it('Renders Dragon elements', () => {
+describe('testing user interaction', () => {
+  it('should return the changed text', () => {
     render(
       <Provider store={store}>
-        <RocketElement />
+        <Fictions />
+        <Dragons />
       </Provider>,
     );
-    expect(screen.queryByText(/missions/)).toBeNull();
+    const tmp = screen.getByText((content, element) => content === 'Join Dragon' && element.name === '0');
+    fireEvent.click(tmp);
+    expect(tmp.innerHTML).toBe('Leave Dragon');
+    // fireEvent.click(tmp);
+    // expect(tmp.innerHTML).toBe('Join Dragon');
   });
 });

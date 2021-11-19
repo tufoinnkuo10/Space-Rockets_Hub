@@ -1,5 +1,6 @@
 const LOAD_DRAGONS = 'space-rockets-hub/dragons/LOAD_DRAGONS';
 const RESERVED_DRAGON = 'space-rockets-hub/dragons/RESERVED_DRAGON';
+const TEST_DRAGON = 'space-rockets-hub/dragons/TEST_DRAGON';
 const API_URL = 'https://api.spacexdata.com/v3/dragons';
 const initState = {
   dragons: [],
@@ -22,6 +23,8 @@ const dragons = (state = initState, action) => {
   switch (action.type) {
     case LOAD_DRAGONS:
       return { ...state, dragons: action.dragons };
+    case TEST_DRAGON:
+      return { ...state, dragons: action.dragons };
     case RESERVED_DRAGON:
       return reservedDragon(state, action);
     default:
@@ -31,6 +34,10 @@ const dragons = (state = initState, action) => {
 
 export function reserved(id) {
   return { type: RESERVED_DRAGON, id };
+}
+
+export function testDragons(dragons) {
+  return { type: TEST_DRAGON, dragons };
 }
 export function loadDragons(result) {
   return { type: LOAD_DRAGONS, dragons: result };
