@@ -1,5 +1,6 @@
 const LOAD_MISSIONS = 'space-rockets-hub/missions/LOAD_MISSIONS';
 const RESERVED_MISSION = 'space-rockets-hub/missions/RESERVED_MISSION';
+const TEST_MISSION = 'space-rockets-hub/missions/TEST_MISSION';
 const API_URL = 'https://api.spacexdata.com/v3/missions';
 const initState = {
   missions: [],
@@ -23,6 +24,8 @@ const missions = (state = initState, action) => {
   switch (action.type) {
     case LOAD_MISSIONS:
       return { ...state, missions: action.missions };
+    case TEST_MISSION:
+      return { ...state, missions: action.missions };
     case RESERVED_MISSION:
       return reservedMission(state, action);
     default:
@@ -32,6 +35,9 @@ const missions = (state = initState, action) => {
 
 export function reserved(id) {
   return { type: RESERVED_MISSION, id };
+}
+export function testMissions(missions) {
+  return { type: TEST_MISSION, missions };
 }
 export function loadMissions(result) {
   return { type: LOAD_MISSIONS, missions: result };
