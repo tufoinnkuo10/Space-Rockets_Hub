@@ -156,60 +156,6 @@ button:focus {
   text-align: center !important;
 }
 
-#missions {
-  width: 90%;
-  border-radius: 1em !important;
-  margin: auto;
-  border-collapse: collapse;
-}
-
-#missions caption {
-  font-weight: bold;
-  font-size: 20px;
-  text-align: start;
-  padding: 8px;
-}
-
-.table-missions {
-  border: 1px solid gray;
-  border-collapse: collapse;
-  width: 90%;
-  margin: auto;
-}
-
-.table-missions th,
-.table-missions td {
-  padding: 5px;
-  border: 1px solid gray;
-  text-align: start;
-}
-
-.table-dragons tbody tr:nth-child(odd) { background-color: #f2f2f2; }
-
-#missions td {
-  border: 1px solid gray;
-  padding: 10px;
-}
-
-.profile-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-
-.table-missions tbody tr:nth-child(odd) { background-color: #f2f2f2; }
-
-.fixed {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  transition: left 2s, top 2s;
-}
-
-.shadow-bottom {
-  box-shadow: 0 4px 9px gray !important;
-}
-
 #dragons {
   width: 90%;
   border-radius: 1em !important;
@@ -241,6 +187,60 @@ button:focus {
 #dragons td {
   border: 1px solid gray;
   padding: 10px;
+}
+
+.table-dragons tbody tr:nth-child(odd) { background-color: #f2f2f2; }
+
+#missions {
+  width: 90%;
+  border-radius: 1em !important;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+#missions caption {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: start;
+  padding: 8px;
+}
+
+.table-missions {
+  border: 1px solid gray;
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+}
+
+.table-missions th,
+.table-missions td {
+  padding: 5px;
+  border: 1px solid gray;
+  text-align: start;
+}
+
+#missions td {
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+.profile-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.table-missions tbody tr:nth-child(odd) { background-color: #f2f2f2; }
+
+.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transition: left 2s, top 2s;
+}
+
+.shadow-bottom {
+  box-shadow: 0 4px 9px gray !important;
 }
 
 @media screen and (max-width: 700px) {
