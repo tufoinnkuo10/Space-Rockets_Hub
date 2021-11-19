@@ -35,7 +35,7 @@ SPA that gets data from an API and displays that information on the different pa
 
 # Authors
 - TUFOIN NKUO
-- AZARIA SAIDI
+- AZARIA SAIDI(https://github.com/azy64)
 - LILLIAN FRANCIS
 
 ## Available Scripts
