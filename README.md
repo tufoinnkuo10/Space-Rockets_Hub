@@ -3,7 +3,7 @@
 # Project Name
 SPACE ROCKETS AND MISSIONS
 
-SPA that gets and displays information on the different pages.
+SPA that gets data from an API and displays that information on the different pages.
 > The app has a rocket page, mission page and dragon page
 > Rockets can be reserved as well as reservation can be cancelled
 > Missions can be joined and left as well
