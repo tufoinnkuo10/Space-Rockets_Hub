@@ -24,6 +24,7 @@ const displayItem = (missionTab, dispatch) => {
             onClick={() => dispatch(reserved(missions[i].mission_id))}
             id={missions[i].mission_id}
             type="button"
+            name={i}
           >
             {missions[i].reserved ? 'Leave Mission' : 'Join Mission'}
           </button>
