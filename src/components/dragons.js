@@ -24,6 +24,7 @@ const displayItem = (dragonTab, dispatch) => {
             onClick={() => dispatch(reserved(dragons[i].id))}
             id={dragons[i].id}
             type="button"
+            name={i}
           >
             {dragons[i].reserved ? 'Leave Dragon' : 'Join Dragon'}
           </button>
