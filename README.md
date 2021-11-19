@@ -14,6 +14,9 @@ SPA that gets data from an API and displays that information on the different pa
 # LIVE PREVIEW
 > ![demo-gif](./images/space.gif)
 
+# TEST
+> ![Test](./images/test.png)
+
 # BUILT WITH
 - LANGUAGE:
 > JavaScript
