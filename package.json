@@ -5,7 +5,6 @@
   "dependencies": {
     "@microsoft/azure-iot-ux-fluent-css": "^8.1.11",
     "@testing-library/jest-dom": "^5.15.0",
-    "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.24.0",
     "react": "^17.0.2",
@@ -25,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test2": "jest"
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +51,7 @@
     "@babel/plugin-syntax-jsx": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
+    "@testing-library/react": "^12.1.2",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.25.2",
