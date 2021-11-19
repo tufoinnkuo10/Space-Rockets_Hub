@@ -213,3 +213,16 @@ button:focus {
     grid-template-columns: 100% !important;
   }
 }
+
+.showrockets {
+  list-style-type: none;
+  border: 1px solid rgb(29, 28, 28);
+  margin: 20px 2% 0 0;
+  color: rgb(39, 39, 39);
+  margin-top: -1px;
+  padding: 0.5rem;
+}
+
+.headname {
+  margin-bottom: 1rem;
+}
