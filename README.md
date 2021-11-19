@@ -31,9 +31,9 @@ SPA that gets data from an API and displays that information on the different pa
 
 
 # Authors
-TUFOIN NKUO
-ALLY SAIDI
-LILLIAN FRANCIS
+> TUFOIN NKUO
+> AZARIA SAIDI
+> LILLIAN FRANCIS
 
 ## Available Scripts
 
