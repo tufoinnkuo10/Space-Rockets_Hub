@@ -184,6 +184,8 @@ button:focus {
   text-align: start;
 }
 
+.table-dragons tbody tr:nth-child(odd) { background-color: #f2f2f2; }
+
 #missions td {
   border: 1px solid gray;
   padding: 10px;
@@ -207,7 +209,6 @@ button:focus {
 .shadow-bottom {
   box-shadow: 0 4px 9px gray !important;
 }
-
 
 #dragons {
   width: 90%;
@@ -241,8 +242,6 @@ button:focus {
   border: 1px solid gray;
   padding: 10px;
 }
-
-.table-dragons tbody tr:nth-child(odd) { background-color: #f2f2f2; }
 
 @media screen and (max-width: 700px) {
   .container {
