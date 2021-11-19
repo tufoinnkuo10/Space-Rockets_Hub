@@ -7,7 +7,7 @@ const initState = {
 function reservedDragon(state, action) {
   const { dragons } = state;
   // console.log('during the process:', state.dragons);
-  const index = dragons.findIndex((dragon) => dragon.dragon_id === action.id);
+  const index = dragons.findIndex((dragon) => dragon.id === action.id);
   if (index !== -1) {
     if (dragons[index].reserved) {
       dragons[index].reserved = false;

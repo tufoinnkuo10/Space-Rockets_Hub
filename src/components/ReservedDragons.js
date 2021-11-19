@@ -8,7 +8,7 @@ const displayfilteredDragons = (dragonTab = []) => {
   for (let i = 0; i < filteredDragons.length; i += 1) {
     tab.push(
       <tr key={i}>
-        <td>{filteredDragons[i].dragon_name}</td>
+        <td>{filteredDragons[i].name}</td>
       </tr>,
     );
   }

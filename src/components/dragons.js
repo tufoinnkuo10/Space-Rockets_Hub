@@ -10,7 +10,7 @@ const displayItem = (dragonTab, dispatch) => {
     tab.push(
       <tr key={i}>
         <td>
-          {dragons[i].dragon_name}
+          {dragons[i].name}
         </td>
         <td>
           { dragons[i].description }
@@ -21,8 +21,8 @@ const displayItem = (dragonTab, dispatch) => {
         <td className="text-center">
           <button
             className={dragons[i].reserved ? 'btn btn-red' : 'btn btn-gray'}
-            onClick={() => dispatch(reserved(dragons[i].dragon_id))}
-            id={dragons[i].dragon_id}
+            onClick={() => dispatch(reserved(dragons[i].id))}
+            id={dragons[i].id}
             type="button"
           >
             {dragons[i].reserved ? 'Leave Dragon' : 'Join Dragon'}
