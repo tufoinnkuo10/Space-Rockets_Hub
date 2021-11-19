@@ -1,25 +1,32 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchData } from '../Redux/dragons/dragons';
+import { fetchData, reserved } from '../Redux/dragons/dragons';
 // import { fetchData } from '../Redux/dragons/dragons';
 
-const displayItem = (dragonTab) => {
+const displayItem = (dragonTab, dispatch) => {
   const { dragons } = dragonTab;
   const tab = [];
   for (let i = 0; i < dragons.length; i += 1) {
     tab.push(
       <tr key={i}>
         <td>
-          {dragons[i].dragons_name}
+          {dragons[i].name}
         </td>
         <td>
           { dragons[i].description }
         </td>
-        <td>
-          <span className="badge">Not a member</span>
+        <td className="text-center">
+          <span className={dragons[i].reserved ? 'badge-active' : 'badge-unenable'}>{dragons[i].reserved ? 'Active Member' : 'Not A MEMBER'}</span>
         </td>
-        <td>
-          <button className="btn" id={dragons[i].dragon_id} type="button">Join Dragon</button>
+        <td className="text-center">
+          <button
+            className={dragons[i].reserved ? 'btn btn-red' : 'btn btn-gray'}
+            onClick={() => dispatch(reserved(dragons[i].id))}
+            id={dragons[i].id}
+            type="button"
+          >
+            {dragons[i].reserved ? 'Leave Dragon' : 'Join Dragon'}
+          </button>
         </td>
       </tr>,
     );
@@ -28,23 +35,25 @@ const displayItem = (dragonTab) => {
 };
 const Dragons = () => {
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchData());
-  }, [dispatch]);
   const dragons = useSelector((state) => state.dragons);
+  useEffect(() => {
+    if (dragons.dragons.length === 0) {
+      dispatch(fetchData());
+    }
+  }, [dispatch]);
   return (
     <div>
-      <table border="1">
+      <table className="table-dragons">
         <thead>
           <tr>
             <th>Dragon</th>
             <th>Description</th>
-            <th>Status</th>
-            <th>Status</th>
+            <th className="min-width">Status</th>
+            <th className="min-width">Action</th>
           </tr>
         </thead>
         <tbody>
-          {displayItem(dragons)}
+          {displayItem(dragons, dispatch)}
         </tbody>
       </table>
     </div>
