@@ -12,7 +12,7 @@ SPA that gets data from an API and displays that information on the different pa
 
 
 # LIVE PREVIEW
-> ![demo-gif](./images/space.gif)
+> ![demo-gif](./images/space2.gif)
 
 # TEST
 > ![Test](./images/test.png)
