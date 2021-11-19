@@ -27,6 +27,8 @@ SPA that gets and displays information on the different pages.
 # Live links
 > [![Netlify Status](https://api.netlify.com/api/v1/badges/20d639fc-3987-45d5-bcf6-3a0db6782f98/deploy-status)](https://app.netlify.com/sites/space-ships-and-missions/deploys)
 
+> [LIVE PREVIEW](https://space-ships-and-missions.netlify.app/)
+
 
 # Authors
 TUFOIN NKUO
