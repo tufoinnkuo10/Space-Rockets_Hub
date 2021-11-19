@@ -7,7 +7,6 @@ const initState = {
 };
 function reservedMission(state, action) {
   const { missions } = state;
-  // console.log('during the process:', state.missions);
   const index = missions.findIndex((mission) => mission.mission_id === action.id);
   if (index !== -1) {
     if (missions[index].reserved) {
@@ -46,7 +45,6 @@ export const fetchData = () => async (dispatch) => {
   try {
     const response = await fetch(API_URL);
     const result = await response.json();
-    // console.log('data', result);
     dispatch(loadMissions(result));
   } catch (error) {
     dispatch(loadMissions({ missions: [] }));

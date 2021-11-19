@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchData, reserved } from '../Redux/dragons/dragons';
-// import { fetchData } from '../Redux/dragons/dragons';
 
 const displayItem = (dragonTab, dispatch) => {
   const { dragons } = dragonTab;

@@ -11,7 +11,7 @@ SPA that gets data from an API and displays that information on the different pa
 
 
 # LIVE PREVIEW
-> ![demo-gif](./images/space.gif)
+> ![demo-gif](./images/space2.gif)
 
 # TEST
 > ![Test](./images/test.png)
@@ -34,17 +34,20 @@ SPA that gets data from an API and displays that information on the different pa
 ## Authors
 
 👤 **Author1**
-
-- GitHub: [@tufoinnkuo10](https://github.com/tufoinnkuo10)
-
-👤 **Author2**
-
-- GitHub: [@azy64](https://github.com/azy64)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/azaria-saidi-524780112/)
+TUFOIN NKUO
+- GitHub: [@githubhandle](https://github.com/tufoinnkuo10)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tufoin-nkuo/)
 
 👤 **Author2**
+AZARIA SAIDI
+- GitHub: [@githubhandle](https://github.com/azy64)
+-  LinkedIn: [LinkedIn](https://www.linkedin.com/in/azaria-saidi-524780112/)
 
-- GitHub: [@ifnotlily](https://github.com/ifnotlily)
+👤 **Author3**
+LILIAN FRANCIS
+- GitHub: [@githubhandle](https://github.com/lilyfrancis)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
 
 ## Available Scripts
 
