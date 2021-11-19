@@ -33,10 +33,22 @@ SPA that gets data from an API and displays that information on the different pa
 > [LIVE PREVIEW](https://space-ships-and-missions.netlify.app/)
 
 
-# Authors
-- TUFOIN NKUO
-- AZARIA SAIDI(https://github.com/azy64)
-- LILLIAN FRANCIS
+## Authors
+
+👤 **Author1**
+TUFOIN NKUO
+- GitHub: [@githubhandle](https://github.com/tufoinnkuo10)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tufoin-nkuo/)
+
+👤 **Author2**
+AZARIA SAIDI
+- GitHub: [@githubhandle](https://github.com/azy64)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+👤 **Author3**
+LILIAN FRANCIS
+- GitHub: [@githubhandle](https://github.com/lilyfrancis)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## Available Scripts
 
